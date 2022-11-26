@@ -195,6 +195,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         * Example
+         */
+        Dezer32\Temporal\Laravel\Example\Providers\ExampleServiceProvider::class,
+
     ],
 
     /*
