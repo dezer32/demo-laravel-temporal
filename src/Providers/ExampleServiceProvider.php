@@ -16,7 +16,10 @@ class ExampleServiceProvider extends ServiceProvider
     public function register(): void
     {
         $this->app->register(ExampleTemporalServiceProvider::class);
+    }
 
+    public function boot(): void
+    {
         $this->registerCommands();
         $this->loadRoutesFrom(__DIR__ . '/../../routes/api.php');
     }
