@@ -16,9 +16,9 @@ class ExampleServiceProvider extends ServiceProvider
     public function register(): void
     {
         $this->app->register(ExampleTemporalServiceProvider::class);
-        $this->app->register(ExampleRouteServiceProvider::class);
 
         $this->registerCommands();
+        $this->loadRoutesFrom(__DIR__ . '/../../routes/api.php');
     }
 
     private function registerCommands(): void
