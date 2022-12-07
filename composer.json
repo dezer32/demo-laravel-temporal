@@ -20,7 +20,7 @@
 	"minimum-stability": "stable",
 	"extra": {
 		"laravel": {
-			"providers": "ezer32\\Temporal\\Laravel\\Example\\Providers\\ExampleServiceProvider"
+			"providers": "Dezer32\\Temporal\\Laravel\\Example\\Providers\\ExampleServiceProvider"
 		}
 	}
 }
